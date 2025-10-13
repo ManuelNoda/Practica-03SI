@@ -59,6 +59,32 @@ El script **wasd** permite controlar un personaje. Primero, obtiene el component
   El script **cambioColor** detecta colisiones mediante el método **OnCollisionEnter**. Cuando un objeto colisiona con otro que tenga el tag **"cubo"**, se imprime en la consola un mensaje indicando el objeto con el que se produjo la colisión. Luego, obtiene el componente Renderer del objeto colisionado y cambia su color utilizando la función **GenerateRandomColor**, la cual genera un color aleatorio.  afectado.
 
   ![ejer2](./gift/Fisicas-ejercicio2.gif)
+
+## Ejercicio-3
+
+  Creamos un cubo grande y le activamos **Is Trigger**. Al entrar en esta zona, el personaje proboca que se  active un efecto que modifica la luz de la escena. 
+  Al salir de la zona, el cambio se revierte. Además, agrega otra zona que, al entrar aumente una variable de daño del jugador.
+
+  El script **cambiopersonaje** gestiona dos tipos de zonas mediante triggers. Primero, la zona de luz detecta si el objeto que entra tiene el tag **"CambioColor"**. Si es así, cambia el color de una luz de la escena y aumenta su intensidad, creando un efecto visual. Cuando el objeto sale de esta zona, el color y la intensidad de la luz se restauran a sus valores originales.La segunda zona, llamada zona de daño, aumenta la variable **playerDamage** cada vez que el objeto entra en un área con el tag "zonaDaño". Además, se muestra en la consola el valor actualizado del daño. 
+
+  ![ejer3](./gift/Fisicas-ejercicio3.gif)
+
+## Ejercicio-4
+
+  Hemos creado tres tipos de objetos colocados en capas distintas: personaje, enemigos y recolectables, trasn onfigura la **Layer Collision Matrix** ahora los enemigos solo colisionan con el persojonaje y lo srecolectables son triggers que con el script **recolectar**.
+  Desaparecen tras el jugador los "recolecta".
+
+  Cuando un objeto entra en el trigger del recolectable, verifica si el objeto tiene el tag "personaje". Si es así, se muestra un mensaje en la consola indicando que el objeto fue recolectado y luego se destruye el objeto recolectable con Destroy(gameObject).
+
+  ![ejer4](./gift/Fisicas-ejer4.gif)
+
+## Ejercicio-5
+   En la escenas hemos puesto 3 cubos que tengan distintos materiales físicos, como resbaladizo, rugoso o con alto rebote. Aplica estos **Physic Materials** a los objetos y, al presionar la tecla **X**, lánzalos usando **AddForce()** para observar cómo varían sus reacciones según el material aplicado.
+
+  El script **lanzarObjeto** permite lanzar un objeto con un **Rigidbody** al presionar la tecla X. En Start(), se obtiene el componente Rigidbody del objeto. Luego, en cada Update, se verifica si se ha presionado la tecla X, y si es así, se aplica una fuerza hacia arriba usando rb.AddForce(Vector3.up * fuerzaLanzamiento).
+
+   ![ejer5](./gift/Fisicas-ejercicoi5.gif)
+  
   
 
   
