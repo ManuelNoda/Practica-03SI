@@ -19,4 +19,4 @@ o siendo **Trigers**
 ## Escenario-3
   El plano no se considera un objeto físico, mientras que el cubo sí lo es y la esfera se comporta como un objeto cinemático. Por lo tanto, el plano únicamente requiere un **collider**, mientras que tanto el cubo como la esfera deben tener un **Rigidbody**, siendo este último configurado como **cinemático**.
 
-   ![escena3](./gift/Fisicas-escenario3.gif)
+   ![escena3](./Fisicas-escenario3.gif)
