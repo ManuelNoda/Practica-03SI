@@ -40,6 +40,18 @@ o siendo **Trigers**
   El plano y el cubo son objetos físicos, y la esfera también lo es, además tiene fricción. Por lo tanto, los tres objetos necesitan un **Rigidbody**.
 
   ![escena7](./gift/Fisicas-escenario7_1.gif)
+
+# Ejercicios
+
+Ahora pasaremos a los distintos ejercicios que se nos piden en la practica.
+
+## Ejercicio-1
+  Creamos un personaje (en mi caso me descarge uno de la **Unity Store**) cuyo desplazamiento pueda controlarse con las teclas WASD. El movimiento esta gestionado mediante un **Rigidbody**, pero sin perder el control completo del personaje.
+
+El script **wasd** permite controlar un personaje. Primero, obtiene el componente **Rigidbody** del personaje y bloquea su rotación para que no gire inesperadamente debido a la física. En cada actualización de frame, detecta qué teclas de movimiento se están presionando y genera un vector de dirección normalizado para asegurar que el personaje no se mueva más rápido al desplazarse en diagonal. Luego, en cada actualización de física (FixedUpdate), mueve al personaje aplicando la física del **Rigidbody**, multiplicando la dirección de movimiento por la velocidad y el tiempo fijo de actualización, lo que permite un desplazamiento suave y controlado.
+
+  ![ejer1](./gift/Ejercicio-1.gif)
+
   
   
 
