@@ -30,3 +30,17 @@ o siendo **Trigers**
   El plano es un objeto físico. El cubo es un objeto físico y la esfera es física con 10 veces más masa que el cubo. En este caso, todos los objetos deben tener **Rigidbody**.
 
    ![escena5](./gift/Fisicas-escena5.gif)
+
+## Escenario-6
+  El plano es un objeto físico. El cubo es un objeto físico y la esfera es física con 100 veces más masa que el cubo. En este caso, todos los objetos deben tener **Rigidbody**.
+
+  ![escena6](./gift/Fisicas-escenario6_1.gif)
+
+## Escenaio-7
+  El plano y el cubo son objetos físicos, y la esfera también lo es, además tiene fricción. Por lo tanto, los tres objetos necesitan un **Rigidbody**.
+
+  ![escena7](./gift/Fisicas-escenario7_1.gif)
+  
+  
+
+
