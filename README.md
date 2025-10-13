@@ -41,6 +41,12 @@ o siendo **Trigers**
 
   ![escena7](./gift/Fisicas-escenario7_1.gif)
 
+## Escenario-8
+  El plano es un objeto físico y  cubo tambien, la esfera no es física y es Trigger. En este caso, todos los objetos deben tener Rigidbody.
+
+  ![escena8](./Fisicas-escenario8.gif)
+
+
 # Ejercicios
 
 Ahora pasaremos a los distintos ejercicios que se nos piden en la practica.
