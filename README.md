@@ -68,7 +68,7 @@ El script **wasd** permite controlar un personaje. Primero, obtiene el component
 
   En este caso creamos varios cubos o esferas con **Rigidbody** dinámico. Cada vez que colisionen con otro objeto, muestra en la consola el nombre del objeto con el que chocan y cambia su color de manera aleatoria.
 
-  El script **cambioColor** detecta colisiones mediante el método **OnCollisionEnter**. Cuando un objeto colisiona con otro que tenga el tag **"cubo"**, se imprime en la consola un mensaje indicando el objeto con el que se produjo la colisión. Luego, obtiene el componente Renderer del objeto colisionado y cambia su color utilizando la función **GenerateRandomColor**, la cual genera un color aleatorio.  afectado.
+  El script **cambioColor** detecta colisiones mediante el método **OnCollisionEnter**. Cuando un objeto colisiona con otro que tenga el tag **"cubo"**, se imprime en la consola un mensaje indicando el objeto con el que se produjo la colisión. Luego, obtiene el componente Renderer del objeto colisionado y cambia su color utilizando la función **GenerateRandomColor**, la cual genera un color aleatorio.
 
   ![ejer2](./gift/Fisicas-ejercicio2.gif)
 
